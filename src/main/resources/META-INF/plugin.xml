@@ -8,8 +8,8 @@
     <depends>com.intellij.modules.java</depends>
 
 <extensions defaultExtensionNs="com.intellij">
-    <compiler.buildTargetScopeProvider implementation="build.scope.LatexBuildScopeProvider"/>
-    <!--<compileServer.plugin classpath ="/home/philip/IdeaProjects/latex-compile-proof-of-concept/build/libs/latex-compile-1.0-SNAPSHOT.jar" />-->
+    <compiler.buildTargetScopeProvider implementation="building.scope.LatexBuildScopeProvider"/>
+    <compileServer.plugin classpath="/home/philip/IdeaProjects/latex-compile-proof-of-concept/building/libs/latex-compile-1.0-SNAPSHOT.jar" />
 </extensions>
 
     <actions>
