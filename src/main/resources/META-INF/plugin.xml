@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>org.jetbrains</id>
+    <name>Hello Action Project</name>
+    <version>0.0.1</version>
+    <vendor email="dummy" url="dummy">dummy</vendor>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+
+<extensions defaultExtensionNs="com.intellij">
+    <compiler.buildTargetScopeProvider implementation="build.scope.LatexBuildScopeProvider"/>
+    <!--<compileServer.plugin classpath ="/home/philip/IdeaProjects/latex-compile-proof-of-concept/build/libs/latex-compile-1.0-SNAPSHOT.jar" />-->
+</extensions>
+
+    <actions>
+        <group id="MyPlugin.SampleMenu" text="Greeting" description="Greeting menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="Myplugin.Textboxes" class="HelloAction" text="Hello" description="Says hello"/>
+        </group>
+    </actions>
+
+</idea-plugin>
